@@ -1,6 +1,6 @@
 # InterviewIQ 🤖
 
-InterviewIQ is an AI-powered mock interview platform built using the MERN stack. It helps students and job seekers practice **Technical & HR interviews**, analyze their resumes, and receive AI-generated feedback.
+InterviewIQ is an **AI-powered mock interview platform** built using the **MERN stack**. It helps students and job seekers practice Technical & HR interviews, analyze resumes, and receive AI-generated feedback.
 
 ## 🚀 Features
 
@@ -11,8 +11,9 @@ InterviewIQ is an AI-powered mock interview platform built using the MERN stack.
 - 📊 AI-generated Performance Reports
 - 📚 Interview History
 - 💰 Credit-based System
+- 💳 Razorpay Payment Integration
 - 🔐 User Authentication
-- ✨ Responsive UI with Framer Motion
+- ✨ Responsive UI & Animations
 
 ## 🛠️ Tech Stack
 
@@ -22,7 +23,19 @@ InterviewIQ is an AI-powered mock interview platform built using the MERN stack.
 
 **AI:** OpenRouter API
 
-**Authentication:** Firebase Authentication
+**Authentication:** Firebase Authentication + JWT
+
+**Payments:** Razorpay
+
+## 💳 Pricing
+
+| Plan | Price | Credits |
+|------|------:|--------:|
+| Free | ₹0 | 100 |
+| Starter Pack | ₹100 | 150 |
+| Pro Pack | ₹500 | 650 |
+
+Users can purchase additional interview credits through Razorpay. Payments are verified on the backend before credits are added.
 
 ## 📂 Project Structure
 
@@ -61,23 +74,39 @@ npm run dev
 
 ## 🔐 Environment Variables
 
-Create `.env` files in `client` and `server` with your Firebase, MongoDB, JWT and OpenRouter credentials.
+Create `.env` files in `client` and `server` with your:
+
+- Firebase credentials
+- MongoDB connection
+- JWT secret
+- OpenRouter API key
+- Razorpay credentials
 
 > Never commit `.env` files or API keys to GitHub.
 
 ## 🎯 How It Works
 
-1. Login/Register
-2. Upload Resume
-3. AI analyzes the resume
-4. Select Technical or HR Interview
-5. Practice the AI interview
-6. Receive AI-generated feedback
-7. View your interview report and history
+```text
+Login/Register
+      ↓
+Upload Resume
+      ↓
+AI Resume Analysis
+      ↓
+Select Technical / HR Interview
+      ↓
+AI Interview
+      ↓
+AI Feedback & Evaluation
+      ↓
+Performance Report
+      ↓
+Interview History
+```
 
 ## 📚 Learning Reference
 
-This project was developed as a learning project using concepts from a MERN + AI SaaS tutorial, with implementation, debugging, and customization done during development.
+This project was developed as a learning project using concepts from a **MERN + AI SaaS tutorial**, with implementation, debugging, customization, and additional features developed during the project.
 
 ## 👩‍💻 Author
 
@@ -86,3 +115,7 @@ This project was developed as a learning project using concepts from a MERN + AI
 B.Tech Computer Science & Engineering
 
 ⭐ If you like the project, consider giving it a star!
+
+## 🔗 Repository
+
+https://github.com/tannuengineer/interviewIQ
