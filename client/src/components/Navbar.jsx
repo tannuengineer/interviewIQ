@@ -83,16 +83,22 @@ function Navbar() {
 
                     {showCreditPopup && (
                         <div className='absolute top-14 right-0 mt-3 w-64
-                        bg-white shadow-xl border border-gray-200 rounded
-                        p-5 z-50'>
+bg-white shadow-xl border border-gray-200 rounded
+p-5 z-50'>
 
-                            <p className='text-sm text-gray-600 mb-4'>Need 
-                            more credits to continue interviews?</p>
-                            <button onClick ={() => navigate("/")}
-                            className='w-full bg-black text-white
-                            py-2 rounded-lg text-sm'>Buy more credits</button>
+  <p className='text-sm text-gray-600 mb-4'>
+    Need more credits to continue interviews?
+  </p>
 
-                        </div>
+  <button
+    onClick={() => navigate("/pricing")}
+    className='w-full bg-black text-white
+    py-2 rounded-lg text-sm hover:bg-gray-800 transition'
+  >
+    Buy more credits
+  </button>
+
+</div>
                     )}
                 </div>
                 
