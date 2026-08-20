@@ -13,7 +13,7 @@ import Pricing from './pages/Pricing'
 
 import { setUserData } from './redux/userSlice'
 
-export const ServerUrl = "https://interviewiq-u9qx.onrender.com"
+export const ServerUrl = "http://localhost:8000"
 
 function App() {
 
